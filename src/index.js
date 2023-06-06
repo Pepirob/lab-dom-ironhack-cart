@@ -60,15 +60,6 @@ function removeProduct(event) {
 
 function createProduct() {
   //... your code goes here
-  // console.log("probando")
-  const inputsDOM = document.querySelectorAll('.create-product input')
-  const nameInputDOM = inputsDOM.item(0);
-  const priceInputDOM = inputsDOM.item(1);
-  text = nameInputDOM.value;
-  price = priceInputDOM.value;
-  
-
-  // console.log(nameInputDOM, priceInputDOM)
 }
 
 window.addEventListener('load', () => {
@@ -79,8 +70,4 @@ window.addEventListener('load', () => {
   allRemoveDOM.forEach( (btn) => {
     btn.addEventListener("click", removeProduct);
   })
-
-  const createBtnDOM = document.querySelector("#create");
-  createBtnDOM.addEventListener('click', createProduct)
-  
 });
